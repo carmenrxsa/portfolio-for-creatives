@@ -786,22 +786,20 @@ a:active {
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
-    flex-direction: row;
+    flex-direction: column;
+    padding: 5rem;
+
   }
 
   /* Sidebar on Large Devices */
   .project-aside {
-    width: 35%;
-    height: 65vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5vh;
+    width: 100%;
     padding-right: 2rem;
   }
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 65%;
+    width: 100%;
   }
 
   .project-image {
