@@ -148,7 +148,7 @@ svg {
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: var(--heading-typeface); 
   font-weight: 500;
   margin-bottom: 1rem;
@@ -156,7 +156,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -522,7 +522,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 100vh;
+  min-height: 50vh;
   background: var(--background-color-footer);
   padding: 1rem;
 }
@@ -599,6 +599,7 @@ a:hover {
 .project-image {
   width: 100%;
   min-height: 50vh;
+  padding: 2rem;
   /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
