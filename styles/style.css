@@ -111,6 +111,7 @@ html {
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
+
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
@@ -212,13 +213,11 @@ em {
   margin-bottom: 1rem;
 }
 
-.overlay-title {
-  font-size: 2.875rem;
-  color: var(--overlay-title-color);
-}
-
 .overlay-description {
   color: var(--overlay-description-color);
+  padding: 3rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 /* Hyperlink Styles */
@@ -460,6 +459,7 @@ a:hover {
   align-items: center;
   flex-direction: column;
   padding: 1em;
+  border-radius: 1rem;
   background-color: var(--overlay-color);
   transition: opacity 0.3s, visibility 0.3s;
 }
@@ -467,6 +467,16 @@ a:hover {
 .work-page-grid-item:hover .overlay {
   visibility: visible;
   opacity: 0.8;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.project-description {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* 
@@ -595,9 +605,15 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  position: relative;
+  
 }
 
 .project-image {
+  border-radius: 1rem;
   width: 100%;
   min-height: 50vh;
   padding: 2rem;
@@ -606,7 +622,6 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-
 
 .text-section {
   width: 100%;
@@ -855,6 +870,7 @@ a:hover {
 
   .project-image {
     min-height: 70vh;
+    
     /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
   }
 
