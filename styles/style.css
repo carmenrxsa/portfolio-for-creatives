@@ -82,7 +82,7 @@ html {
   --project-title-typeface: "Rethink Sans", sans-serif;
   --background-color: #fffbfa;
   --background-color-about: #fffbfa;
-  --background-color-footer: #fffbfa;
+  --background-color-footer: #e4ecfe;
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
   --h1-color: #2244bf;
@@ -98,7 +98,7 @@ html {
   --overlay-title-color: #ffffff;
   --overlay-description-color: #2244bf;
   --hyperlink-color: #2244bf;
-  --hyperlink-alternate-color: rgb(0, 0, 0);
+  --hyperlink-alternate-color: orangered;
   --hover-color: #111;
   --visited-color: #2244bf;
   --project-title-color: #2244bf;
