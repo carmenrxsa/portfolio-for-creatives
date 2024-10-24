@@ -206,6 +206,9 @@ em {
   color: var(--overlay-color);
 }
 
+.project-image-wrapper {
+  margin-bottom: 3rem;
+}
 .project-title {
   font-size: 2.725rem;
   font-family: var(--project-title-typeface);
@@ -217,6 +220,10 @@ em {
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-top: 2rem;
+}
+
+.project-footer {
+  background: salmon;
 }
 
 .project-details-list {
