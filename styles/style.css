@@ -207,14 +207,15 @@ em {
   color: var(--overlay-color);
 }
 
-.project-image-wrapper {
+/* .project-image-wrapper {
   margin-bottom: 3rem;
-}
+} */
 .project-title {
   font-size: 2.725rem;
+  line-height: 1;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .project-subtitle {
   font-size: 1.225rem;
@@ -269,7 +270,7 @@ a:active {
 .navigation-arrow:link {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--accent-color);
-  color: transparent;
+  color: var(--accent-color);
 }
 
 .navigation-arrow:active,
@@ -425,8 +426,7 @@ a:active {
 .work-page-grid-item {
   width: 100%;
   height: auto;
-  position: relative;
-  /* Required to contain overlay size */
+  background: goldenrod;
 }
 
 /* Overlay */
@@ -450,9 +450,15 @@ a:active {
   transition: opacity 0.3s, visibility 0.3s;
 }
 
-.work-page-grid-item:hover .overlay {
+.project-with-overlay {
+  position: relative;
+  /* Required to contain overlay size */
+  background: hotpink;
+}
+
+.project-with-overlay:hover .overlay {
   visibility: visible;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .project-description {
@@ -608,12 +614,11 @@ a:active {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
   padding: 2rem;
-  /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1.225rem;
 }
 
 .text-section {
@@ -785,16 +790,6 @@ a:active {
     grid-gap: 1rem;
   }
 
-  /* Grayscale filter with full-colour on hover and tap */
-  .work-page-grid-item a.grayscale img {
-    filter: grayscale(100);
-  }
-
-  .work-page-grid-item > a.grayscale:active img,
-  .work-page-grid-item > a.grayscale:hover img {
-    filter: grayscale(0);
-  }
-
   .about {
     padding: 4rem;
     grid-template-columns: 1fr 1fr;
@@ -872,18 +867,8 @@ a:active {
     width: 100%;
   }
 
-  .project-image {
-    min-height: 70vh;
-
-    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
-  }
-
   .project-image-container {
     flex-direction: row;
-  }
-
-  .project-navigation {
-    justify-content: flex-start;
   }
 
   .arrow {
@@ -907,6 +892,6 @@ a:active {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
   }
 }
