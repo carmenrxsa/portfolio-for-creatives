@@ -210,8 +210,8 @@ em {
 /* .project-image-wrapper {
   margin-bottom: 3rem;
 } */
-.project-title {
-  font-size: 2.725rem;
+qq .project-title {
+  font-size: 1.3rem;
   line-height: 1;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
@@ -225,7 +225,8 @@ em {
 }
 
 .project-footer {
-  background: salmon;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .project-details-list {
@@ -426,7 +427,6 @@ a:active {
 .work-page-grid-item {
   width: 100%;
   height: auto;
-  background: goldenrod;
 }
 
 /* Overlay */
@@ -453,7 +453,6 @@ a:active {
 .project-with-overlay {
   position: relative;
   /* Required to contain overlay size */
-  background: hotpink;
 }
 
 .project-with-overlay:hover .overlay {
