@@ -52,7 +52,9 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/temp/up-cursor.png"), auto !important;
+
+  /* cursor: url("../assets/branding-images/carmen-huang-custom-cursor.svg"), auto !important; */
+
   /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
@@ -93,12 +95,12 @@ html {
   --h6-color: #2244bf;
   --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #2244bf;
+  --accent-color: #bbcaff;
   --overlay-color: #e4ecfe;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #2244bf;
   --hyperlink-color: #2244bf;
-  --hyperlink-alternate-color: orangered;
+  --hyperlink-alternate-color: #000000;
   --hover-color: #111;
   --visited-color: #2244bf;
   --project-title-color: #2244bf;
@@ -106,7 +108,7 @@ html {
   --project-sidebar-text-color: #2244bf;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #2244bf;
+  --text-selection-background-color: #e4ecfe;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -371,10 +373,10 @@ a:active {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   padding: 2rem 4rem;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-icon {
@@ -482,6 +484,15 @@ a:active {
   background: var(--background-color-about);
   padding: 1rem;
   flex: 1;
+}
+
+.about-video {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  background: var(--background-color-about);
+  padding: 1rem;
+  flex: column;
 }
 
 .about-item-1 {
