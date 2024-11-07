@@ -500,7 +500,7 @@ a:active {
 
 .about-extra {
   background: var(--background-color-about);
-
+  padding: 5%;
   flex: 1;
 }
 
