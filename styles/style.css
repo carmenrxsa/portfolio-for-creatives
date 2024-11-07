@@ -765,10 +765,10 @@ a:active {
 */
 @media (max-width: 667px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   h3 {
     font-size: 1.2rem;
@@ -776,12 +776,37 @@ a:active {
   h4 {
     font-size: 1.15rem;
   }
-  p {
+  h5 {
+    font-size: 1.12rem;
+  }
+  h6 {
     font-size: 1.1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .fineprint {
+    font-size: 1rem;
   }
 
   .project-navigation {
     margin: 2rem;
+  }
+
+  /* Nav Bar */
+  .logo {
+    width: 4rem;
+    padding-top: 6%;
+    /* TODO: Adjust the width of the logo on large devices here. */
+  }
+
+  .menu-wrapper {
+    padding-top: 8%;
+  }
+
+  .menu-item {
+    margin: 0.5%;
   }
 
   /* Mobile Global Footer */
@@ -789,7 +814,7 @@ a:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 0rem;
   }
 
   /* Mobile Global Footer */
