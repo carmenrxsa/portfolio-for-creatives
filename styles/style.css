@@ -157,7 +157,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
@@ -213,7 +213,8 @@ em {
   margin-bottom: 3rem;
 } */
 .project-title {
-  font-size: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
   line-height: 1;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
@@ -266,29 +267,11 @@ a:active {
   /* Tap on mobile */
 }
 
-.navigation-arrow {
-  color: var(--alt-background-color);
-}
-
-.navigation-arrow:link {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-  color: var(--accent-color);
-}
-
-.navigation-arrow:active,
-.navigation-arrow:hover {
-  color: var(--accent-color);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-}
-
 .colored-link {
   color: var(--hyperlink-alternate-color);
 }
 
 .custom-navigation:hover {
-  background: url(assets/temp/heading-background.svg);
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -486,15 +469,6 @@ a:active {
   flex: 1;
 }
 
-.about-video {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  background: var(--background-color-about);
-  padding: 1rem;
-  flex: column;
-}
-
 .about-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -524,6 +498,18 @@ a:active {
   flex: 1;
 }
 
+.about-extra {
+  background: var(--background-color-about);
+
+  flex: 1;
+}
+
+.about-video-grid {
+  flex-direction: column;
+  padding: 1rem;
+  flex: 1;
+}
+
 .about-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -540,13 +526,8 @@ a:active {
 }
 
 .about-item-4 {
-  grid-column: 1 / 2;
+  grid-column: 1 / 1;
   grid-row: 4 / 5;
-}
-
-.about-info {
-  padding-top: 4%;
-  font-size: 2rem;
 }
 
 .about-info {
@@ -556,40 +537,27 @@ a:active {
   padding-right: 1.3rem;
 }
 
-.about-info-extra {
-  padding-top: 4%;
-  font-size: 2rem;
-}
-
 .about-info-list {
   font-size: 1.3rem;
-}
-
-.about-info-list {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
   line-height: 1.6rem;
 }
 
-.about-block,
-.about-cta {
-  padding-top: 2rem;
-}
-
-.p,
-.about-description {
-  font-size: 1.39rem;
-}
-
 .about-description {
   padding-left: 1.3rem;
-  padding-right: 1.3rem;
+  padding-right: 5rem;
 }
 
 .about-header {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
   padding-top: 4rem;
+}
+
+.about-video {
+  aspect-ratio: 16/9;
+  width: 100%;
 }
 
 /* Global Footer
@@ -639,7 +607,7 @@ a:active {
 
 .social-media-icons {
   margin: 0.5rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 /* Project Page 
@@ -730,53 +698,6 @@ a:active {
 
 /* 
 
-██   ██  ██████  ██      ██████  ██ ███    ██  ██████  
-██   ██ ██    ██ ██      ██   ██ ██ ████   ██ ██       
-███████ ██    ██ ██      ██   ██ ██ ██ ██  ██ ██   ███ 
-██   ██ ██    ██ ██      ██   ██ ██ ██  ██ ██ ██    ██ 
-██   ██  ██████  ███████ ██████  ██ ██   ████  ██████  
-                                                       
-*/
-
-.holding-page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
-  place-items: center;
-  text-align: center;
-  width: 100%;
-  min-height: 100vh;
-  /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1),
-      var(--background-color-holding-page)
-    ),
-    url(/assets/temp/noise.svg);
-  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
-}
-
-.holding-page-animation {
-  margin-bottom: 1rem;
-}
-
-.holding-page-title {
-  font-size: 1.5rem;
-  color: var(--holding-page-title-color);
-}
-
-.holding-page-footer {
-  display: grid;
-  place-items: center;
-  min-height: 10vh;
-  width: 100%;
-}
-
-.holding-page-copyright {
-  font-size: 0.8rem;
-  color: var(--holding-page-footer-color);
-  margin-bottom: 0;
-}
 
 /*
 ███████ ██████  ██████   ██████  ██████  
@@ -842,6 +763,49 @@ a:active {
 ██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██ ██ ███████ ███████ 
 
 */
+@media (max-width: 667px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1.15rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+
+  .project-navigation {
+    margin: 2rem;
+  }
+
+  /* Mobile Global Footer */
+  .branding-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  /* Mobile Global Footer */
+  .global-footer {
+    padding: 3rem 2rem 2rem 2rem;
+    border-radius: 4rem 4rem 0rem 0rem;
+  }
+
+  .footer-item-3 {
+    margin-top: 1rem;
+  }
+
+  .social-media-icons {
+    padding-top: 1rem;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) */
 
