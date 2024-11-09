@@ -794,6 +794,31 @@ a:active {
     margin: 2rem;
   }
 
+  /* Project Page*/
+  .project-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .project-info {
+    width: 100%;
+  }
+
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .project-image {
+    margin-bottom: 1rem;
+  }
+
   /* Nav Bar */
   .logo {
     width: 4rem;
