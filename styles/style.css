@@ -531,7 +531,7 @@ a:active {
 }
 
 .about-info {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   font-size: 2rem;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
@@ -552,7 +552,7 @@ a:active {
 .about-header {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
-  padding-top: 4rem;
+  padding-top: 1.5rem;
 }
 
 .about-video {
@@ -606,7 +606,7 @@ a:active {
 }
 
 .social-media-icons {
-  margin: 0.5rem;
+  margin-right: 1rem;
   padding-top: 1rem;
 }
 
