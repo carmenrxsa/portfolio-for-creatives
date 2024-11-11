@@ -157,7 +157,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
@@ -880,7 +880,7 @@ a:active {
   }
 
   .project-title {
-    font-size: 4.725rem;
+    font-size: 3rem;
   }
   .project-subtitle {
     font-size: 2.225rem;
